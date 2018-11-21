@@ -26,7 +26,7 @@ paths:
       tags:
         - vm
       description: Returns the list of the vms
-      operationId: vm_list
+      operationId: vm.vm_list
       produces:
         - application/json
       parameters:

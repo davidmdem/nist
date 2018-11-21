@@ -29,7 +29,7 @@ paths:
   /cloudmesh/image:
     get:
       description: Returns all general description images
-      operationId: get_image
+      operationId: image.get_image
       produces:
         - application/json
       responses:
@@ -52,7 +52,7 @@ paths:
   '/cloudmesh/image/{name}':
     get:
       description: Returns a general description of an image
-      operationId: get_image_by_name
+      operationId: image.get_image_by_name
       parameters:
         - name: name
           in: path

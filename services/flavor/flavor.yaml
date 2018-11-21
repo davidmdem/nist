@@ -29,7 +29,7 @@ paths:
   /cloudmesh/flavors:
     get:
       description: Returns all flavors
-      operationId: get_flavor
+      operationId: flavor.get_flavor
       produces:
         - application/json
       responses:
@@ -52,7 +52,7 @@ paths:
   '/cloudmesh/flavor/{name}':
     get:
       description: Returns a flavor
-      operationId: get_flavor_by_name
+      operationId: flavor.get_flavor_by_name
       parameters:
         - name: name
           in: path
