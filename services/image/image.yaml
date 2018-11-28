@@ -39,7 +39,7 @@ paths:
             $ref: '#/definitions/Image'
     put:
       summary: Create a new image
-      operationId: add_image
+      operationId: image.add_image
       parameters:
         - in: body
           name: image

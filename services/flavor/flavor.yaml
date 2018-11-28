@@ -39,7 +39,7 @@ paths:
             $ref: '#/definitions/Flavor'
     put:
       summary: Create a new flavor
-      operationId: add_flavor
+      operationId: flavor.add_flavor
       parameters:
         - in: body
           name: flavor
