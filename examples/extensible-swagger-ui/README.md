@@ -1,4 +1,3 @@
-
 # Extensible Swagger with UI
 
 The client/server structure of this example is based on the materials found in Real Python's 
@@ -14,7 +13,13 @@ This demo uses MongoDB for a mock database. A mongo service should be available 
 connect("cloudmesh-mock", alias="default")
 ```
 
-If your setup does not allow this, replace `cloudmesh-mock` with a connection string that
+If you do not have MongoDB installed, it can be added with:
+
+```bash
+sudo apt install -y mongodb
+```
+
+If your setup does not allow this, replace `cloudmesh-mock` with a MongoDB connection string that
 is more appropriate for your environment. 
 
 To run the Swagger server
@@ -103,7 +108,7 @@ considering which portions of the API should be active.
 
 ### Connexion's built in Swagger UI support
 
-It is not well known that connexion has build in support for a basic Swagger UI. By requiring/installing 
+Connexion has built in support for a basic Swagger UI. By requiring/installing 
 `connexion[swagger-ui]` instead of `connexion`, a basic Swagger UI is included at the URL
 `{api}/ui` where `{api}` is your applicatin's base URL. In this example project the URL for the
 Swagger UI is http://localhost:8080/api/ui.
